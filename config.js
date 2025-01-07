@@ -7,11 +7,8 @@ import axios from 'axios'
 
 // Global variables
 global.owner = [
-  ['918360234087', 'Ｗ Ｈ Ｉ Ｔ Ｅ ４ ４ ４  ? ?', true], 
-  ['923184070915', '𝙎𝘼𝙇𝙈𝘼𝙉 𝘼𝙃𝙈𝘼𝘿 -(𝘼𝙝𝙢𝙢𝙞)', true], 
-  ['233533763772', 'Abraham Dwamena2.0', true],
-  ['233268374753', 'Abraham Dwamena3.0', true]
-] 
+  ['918127875972', 'Fꫀׁׅܻᥣׁׅ֪ꪱׁׅ᥊ׁׅ Bᨵׁׅtׁׅ', true], 
+  
 
 global.mods = ['917888755628','923184070915', '233268374753', '923184474176', '233268374753'] 
 global.prems = ['923184070915', '94789481495', '918360234087', '233268374753']
@@ -49,10 +46,10 @@ global.APIKeys = {
 }
 
 // Sticker WM
-global.botname = '𝘟𝘭𝘪𝘤𝘰𝘯 𝘝𝘰𝘭 2'
+global.botname = 'Fꫀׁׅܻᥣׁׅ֪ꪱׁׅ᥊ׁׅ Bᨵׁׅtׁׅ'
 global.premium = 'true'
-global.packname = '𝙏𝙚𝙖𝙢 𝙓𝙇𝙄𝘾𝙊𝙉' 
-global.author = '@𝘮𝘥𝘹𝘭𝘪𝘤𝘰𝘯𝘷2' 
+global.packname = '𝙲𝚘𝚌𝚘' 
+global.author = '🏴‍☠️ᩬᩧ̸⃞🕸' 
 global.menuvid = 'https://files.catbox.moe/yu3j54.mp4'
 global.igfg = '▢✓ Follow Our channel\nhttps://whatsapp.com/channel/0029VaE8GbCDzgTILE7OtC3e\n' 
 global.dygp = 'https://chat.whatsapp.com/BfH0KLkICn2BjmGFMRcGMW'
@@ -62,7 +59,7 @@ global.fgpyp = 'https://youtube.com/@s4salmanyt'
 global.fglog = 'XLICON.jpg' 
 global.thumb = fs.readFileSync('./XLICON.jpg')
 
-global.wait = '*🕣 _XLICON IS LOADING..._*\n*▰▰▰▱▱▱▱▱⭐*'
+global.wait = '> 🏴‍☠️ᩬᩧ̸⃞🕸Wɑׁׅ֮ꪱׁׅtׁׅ Kɑׁׅ֮ꭈׁׅᥣׁׅ֪ꫀׁׅܻ Yꭈׁׅ tׁׅhׁׅ֮ᨵׁׅժׁׅ݊ɑׁׅ֮'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✔️'
