@@ -59,7 +59,7 @@ global.fgpyp = 'https://youtube.com/@s4salmanyt'
 global.fglog = 'XLICON.jpg' 
 global.thumb = fs.readFileSync('./XLICON.jpg')
 
-global.wait = '> 🏴‍☠️ᩬᩧ̸⃞🕸Wɑׁׅ֮ꪱׁׅtׁׅ Kɑׁׅ֮ꭈׁׅᥣׁׅ֪ꫀׁׅܻ Yꭈׁׅ tׁׅhׁׅ֮ᨵׁׅժׁׅ݊ɑׁׅ֮'
+global.wait = '*🏴‍☠️ᩬᩧ̸⃞🕸Wɑׁׅ֮ꪱׁׅtׁׅ Kɑׁׅ֮ꭈׁׅᥣׁׅ֪ꫀׁׅܻ Yꭈׁׅ tׁׅhׁׅ֮ᨵׁׅժׁׅ݊ɑׁׅ֮*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✔️'
