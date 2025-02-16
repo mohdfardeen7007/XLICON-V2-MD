@@ -1,19 +1,39 @@
+import axios from "axios";
 
-let handler = async (m, { conn}) => {
-let user = global.db.data.users[m.sender]
-let name = conn.getName(m.sender)
-let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let av = `./Assets/mp3/${pickRandom(["Xlicon", "Xlicon1", "Xlicon2", "Xlicon3", "Xlicon4"])}`
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  try {
+    if (!text) throw 'Uhm.. what do you want to say?';
+    
+    await m.react('⏳');
 
-m.reply( `Hello ${taguser} Am Xlicon-V2 creatd by team Xlicon Need help?  type /help `)
-conn.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
-} 
+    let apiUrl = "https://ai.clauodflare.workers.dev/chat";
+    let payload = {
+      model: "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      messages: [{ role: "user", content: text }],
+    };
 
-handler.customPrefix = /^(Xlicon|Team Xlicon)$/i
-handler.command = new RegExp
+    const { data } = await axios.post(apiUrl, payload, {
+      headers: { "Content-Type": "application/json" }
+    });
 
-export default handler
+    if (!data || !data.data || !data.data.response) {
+      throw 'No result found';
+    }
 
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}
+    let replyText = data.data.response.split("</think>").pop().trim();
+    let markdownText = `*RESULTS:*\n\n*DeepSeek AI Response:*\n\n- _${replyText}_`;
+
+    await conn.sendMessage(m.chat, { text: markdownText }, { quoted: m });
+    await m.react('✅');
+  } catch (error) {
+    console.error("Error:", error);
+    await m.react('❌');
+    m.reply('Oops! Something went wrong. Please try again later.');
+  }
+};
+
+handler.help = ['deepseek <text>'];
+handler.tags = ['ai'];
+handler.command = ['bot'];
+
+export default handler;
