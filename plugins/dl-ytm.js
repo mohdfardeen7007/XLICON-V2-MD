@@ -85,6 +85,6 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
 handler.help = ['search and dl'];
 handler.tags = ['downloader'];
-handler.command = ['ytm', 'play'];
+handler.command = ['ytm', 'play2'];
 
 export default handler;
